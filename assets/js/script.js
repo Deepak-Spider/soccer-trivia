@@ -343,3 +343,163 @@ function getResults() {
         displayResults(correctTotal);
     }
 }
+/**
+ * Displays the total of correct answers after hiding the game area display.  
+ * Calls the saveUserName function to display username in results area.
+ * @param {*} correctTotal the total of correct answers
+ */
+function displayResults(correctTotal) {
+
+    // References HTML elements locally
+    const gameArea = document.getElementById('game-area');
+    const resultArea = document.getElementById('result-area');
+    const result = document.getElementById('result');
+    const icon = document.getElementById('icon');
+    const comment = document.getElementById('comment');
+
+    let user = saveUserName();
+
+    // replace quiz questions with results
+    gameArea.style.display = 'none';
+    resultArea.style.display = '';
+    result.innerText = `${correctTotal} out of ${questions.length}`;
+
+    // if 10 out of 10 questions are correct
+    if (correctTotal == questions.length) {
+        // display trophy icon
+        icon.innerHTML = `
+        <i class="fa-solid fa-trophy" aria-hidden="true" title="Trophy" id="trophy"></i>
+        <span class="sr-only">Congrats you got a Trophy</span>
+        `;
+        // display comment 
+        comment.innerText = `
+            You're a Quizzified Master 
+            ${user}
+        `;
+        
+        // if number of correct questions is between 6 and 9  
+    } else if (correctTotal < (questions.length) && correctTotal > (questions.length / 2)) {
+        // display medal icon
+        icon.innerHTML = `
+        <i class="fa-solid fa-award" aria-hidden="true" title="Medal" id="medal"></i>
+        <span class="sr-only">Well done you got a Medal</span>
+        `;
+        // display comment
+        comment.innerText = `
+            Pretty, pretty, pretty good 
+            ${user}
+        `;
+       
+        // otherwise (5 or less questions correct)
+    } else {
+        // display crying face icon
+        icon.innerHTML = `
+        <i class="fa-regular fa-face-sad-tear" aria-hidden="true" title="Crying face" id="crying"></i>
+        <span class="sr-only">Boohoo you got a crying face</span>
+        `;
+
+        // display comment
+        comment.innerText = `
+            What planet are you living on
+            ${user}?
+        `;
+    }
+}
+
+/**
+ * Called when next button is clicked, increments by one and displays the question count and
+ * the progress bar which is incremented by 10% every time the next button is clicked
+ */
+function increment() {
+    exhibitCounter++;
+    exhibitNo.innerText = `${exhibitCounter}`;
+    
+    width += 10;
+    progressBar.style.width = `${width}%`;
+}
+
+/**
+ * Called when the previous button is clicked, decrements the question count by 1 and the
+ * progress bar by 10% and displays them
+ */
+function decrement() {
+    exhibitCounter--;
+    exhibitNo.innerText = `${exhibitCounter}`;
+    
+    width -= 10;
+    progressBar.style.width = `${width}%`;
+}
+
+// The following functions were adapted from https://www.sitepoint.com/simple-javascript-quiz/
+
+/** 
+ * Shows one exhibit (question and its set of options) at a time 
+ */
+function showExhibit(n) {
+
+    // hides the current exhibit by removing the active-exhibit class
+    exhibits[currentExhibit].classList.remove('active-exhibit');
+    // shows the new exhibit by adding the active-exhibit class
+    exhibits[n].classList.add('active-exhibit');
+    // updates the current exhibit's number
+    currentExhibit = n;
+
+    // if user is on the first exhibit, hide the previous button else show it
+    if(currentExhibit === 0) {
+        previousBtn.style.display = 'none';
+    } else {
+        previousBtn.style.display = 'inline-block';
+    }
+
+    // if user is on the last exhibit, hide the next button and show the submit button
+    // else show the next button and hide the submit button
+    if(currentExhibit === exhibits.length - 1) {
+        nextBtn.style.display = 'none';
+        submitBtn.style.display = 'block';
+    } else {
+        nextBtn.style.display = 'inline-block';
+        submitBtn.style.display = 'none';
+    }
+}
+
+/**
+ * Called when next button is clicked; shows next exhibit and brings the focus
+ * back to the quiz div and answer options (radio buttons)
+ */
+function showNextExhibit() {
+    showExhibit(currentExhibit + 1);
+
+    document.getElementById('quiz').focus();
+}
+
+/**
+ * Called when previous button is clicked; shows previous exhibit and brings the focus
+ * back to the quiz div and answer options (radio buttons)
+ */
+function showPreviousExhibit() {
+    showExhibit(currentExhibit - 1);
+    
+    document.getElementById('quiz').focus();
+}
+
+// Prevents page refresh on Enter key for form text input and calls getUserName function
+if (document.getElementById("user-input") != null) {
+    document.getElementById("user-input").addEventListener("keydown", function(event) {
+    if (event.key === 'Enter') {
+            event.preventDefault();
+            getUserName();
+        }
+    });
+}
+
+// Call the showNextExhibit and the increment function when the next button is clicked
+if (nextBtn != null) { 
+    nextBtn.addEventListener('click', showNextExhibit); 
+    nextBtn.addEventListener('click', increment);
+}
+
+// Call the showPreviousExhibit and the decrement function when the previous button is clicked
+if (previousBtn != null) { 
+    previousBtn.addEventListener('click', showPreviousExhibit);
+    previousBtn.addEventListener('click', decrement);
+}

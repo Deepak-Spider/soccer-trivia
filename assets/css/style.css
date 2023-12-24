@@ -265,3 +265,56 @@ main {
     display: block;
 }
 
+/* Quiz Question styling */
+.question {
+    max-width: 525px;
+    font-size: 2.75rem;
+    margin: 0 auto .5em;
+}
+
+/* Quiz Answer options styling */
+.answers {
+    width: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    margin: 0 auto;
+}
+
+input[type="radio"] {
+    position: relative;
+    top: 0;
+    border-radius: 50%;
+    margin: 0 .75em;
+    width: 1em;
+    height: 1em;
+    background-color: #b9aefa;
+    transition: .2s all linear;
+}
+
+input[type="radio"]:checked {
+    border: 6px solid #9381FF;
+}
+
+.radio-label {
+    background-color: #9381FF;
+    color: #2D232E;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: .25em;
+    padding: .5em .75em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.radio-label:focus {
+    background-color: rgb(181, 169, 250);
+    color: #2D232E;
+    box-shadow: 3px 4px 10px rgba(181, 169, 250, .5);
+}
+
+.radio-checked{
+    background-color: #2472a7;
+    color: #B8EBD0;
+}

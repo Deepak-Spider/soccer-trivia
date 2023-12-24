@@ -373,7 +373,7 @@ function displayResults(correctTotal) {
         `;
         // display comment 
         comment.innerText = `
-            You're a Quizzified Master 
+         Congratulations, Soccer Maestro! 
             ${user}
         `;
         
@@ -386,7 +386,7 @@ function displayResults(correctTotal) {
         `;
         // display comment
         comment.innerText = `
-            Pretty, pretty, pretty good 
+            Well Played! 
             ${user}
         `;
        
@@ -400,8 +400,8 @@ function displayResults(correctTotal) {
 
         // display comment
         comment.innerText = `
-            What planet are you living on
-            ${user}?
+          Soccer Rookie, No Worries! 
+            ${user}
         `;
     }
 }

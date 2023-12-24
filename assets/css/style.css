@@ -318,3 +318,97 @@ input[type="radio"]:checked {
     background-color: #2472a7;
     color: #B8EBD0;
 }
+
+/* Error Message Styling */
+.quiz-feedback {
+    color: #f1919f;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+/* Previous, Next and Results Button container */
+.controls {
+    min-height: 50px;
+    padding: .5em;
+    margin-top: 1em;
+}
+
+/* Previous and Next Buttons styling */
+.btn-nav--next {
+    float: right;
+}
+
+.btn-nav {
+    display: inline-block;
+    color: #2D232E;
+    font-size: 1.6rem;
+    font-weight: 700;
+    background-color: #B8EBD0;
+    padding: .5em 1em;
+    box-shadow: 3px 3px 9px rgba(184, 235, 208, .4);
+}
+
+.btn-nav:hover,
+.btn-nav:focus {
+    background-color: #2D232E;
+    color: #B8EBD0;
+    border: 1px solid #B8EBD0;
+}
+
+/* Results Button Styling */
+.btn-submit {
+    padding: .5em 1em;
+    font-size: 1.6rem;
+    font-weight: 700;  
+    letter-spacing: 2px;
+    font-variant: small-caps;
+    margin: 1em auto 0;  
+}
+
+.btn-submit:hover,
+.btn-submit:focus {
+    transform: scale(1.05);
+    transition: transform 250ms ease-in-out;
+    font-weight: 700;
+    background-color: rgb(79, 151, 199);
+    box-shadow: 0 4px 15px rgb(45, 35, 46);   
+}
+
+/* -----Result Area Styling-------- */
+.result-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    text-align: center;
+    padding: 1em;
+}
+
+.icon {
+    width: 150px;
+    background: linear-gradient(135deg,
+    rgb(45, 35, 46),
+    transparent);
+    font-size: 5rem;
+    padding: .5em;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 7px 6px 10px rgba(227, 220, 230, 0.8);
+}
+
+#trophy {
+    color: rgb(238, 166, 12);
+}
+
+#medal {
+    color: rgb(184, 235, 208);
+}
+
+#crying {
+    color: rgb(255, 255, 255);
+}
+
+.result-area span {
+    margin-bottom: 1.5em;
+}

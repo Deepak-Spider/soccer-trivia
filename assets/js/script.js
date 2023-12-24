@@ -66,3 +66,83 @@ function saveUserName() {
 
     return user;
 }
+
+// Array of quiz questions
+let questions = [
+    {
+        question: 'Which team holds the record for most FIFA World Cup titles?',
+        choice1: 'Germany',
+        choice2: 'Brazil',
+        choice3: 'Italy',
+        choice4: 'Argentina',
+        answer: 2,
+    },
+    {
+        question:"How many minutes is a standard soccer match?",
+        choice1: "90 minutes",
+        choice2: "120 minutes",
+        choice3: "60 minutes",
+        choice4: "75 minutes",
+        answer: 1,
+    },
+    {
+        question: "Who is known as the Hand of God for his infamous goal in the 1986 World Cup?",
+        choice1: "Diego Maradona",
+        choice2: "Zinedine Zidane",
+        choice3: "Ronaldo Nazario",
+        choice4: "Thierry Henry",
+        answer: 1,
+    },
+    {
+        question:"What is the name of the designated area where a penalty kick is taken?",
+        choice1: "Penalty box",
+        choice2: "Penalty area",
+        choice3: "Penalty spot",
+        choice4: "Penalty circle",
+        answer: 1,
+    },
+    {
+        question: 'What is the name of the award given to the player who scores the most goals in a season?',
+        choice1: 'Golden Boot',
+        choice2: 'Golden Ball',
+        choice3: 'Silver Boot',
+        choice4: 'Bronze Boot',
+        answer: 1,
+    },
+    {
+        question: 'Which club has won the most UEFA Champions League titles until December 2023?',
+        choice1: 'Real Madrid',
+        choice2: 'FC Barcelona',
+        choice3: 'AC Milan',
+        choice4: 'Bayern Munich',
+        answer: 1,
+    },
+    {
+        question: 'Who is the all-time leading goal scorer in FIFA World Cup history?',
+        choice1: 'Lionel Messi',
+        choice2: 'Cristiano Ronaldo',
+        choice3: 'Pele',
+        choice4: 'Miroslav Klose',
+        answer: 4,
+    },
+    {
+        question: 'Which country won the first-ever FIFA World Cup in 1930?',
+        choice1: 'Germany',
+        choice2: 'Brazil',
+        choice3: 'Italy',
+        choice4: 'Uruguay',
+        answer: 4,
+    },
+    {
+        question: 'Which country won the 2022 FIFA World Cup?',
+        choice1: 'France',
+        choice2: 'Brazil',
+        choice3: 'Argentina',
+        choice4: 'Spain',
+        answer: 3,
+    },
+]
+
+let currentExhibit = 0;
+let exhibitCounter = 1;
+let width = 10;

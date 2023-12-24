@@ -2,6 +2,14 @@
 // References to HTML elements and variable assignments
 const username = document.getElementById('user-input');
 const feedback = document.getElementById('feedback');
+const previousBtn = document.getElementById('previous');
+const nextBtn = document.getElementById('next');
+const exhibits = document.getElementsByClassName('exhibit');
+const exhibitNo = document.getElementById('exhibit-num');
+const progressBar = document.getElementById('progress-bar');
+const alertMsg = document.getElementById('error-msg');
+const quizContainer = document.getElementById('quiz');
+const submitBtn = document.getElementById('submit');
 
 /**
  * Validates username inserted on the index.html(homepage)
@@ -146,3 +154,66 @@ let questions = [
 let currentExhibit = 0;
 let exhibitCounter = 1;
 let width = 10;
+
+function generateQuiz() {
+    
+    /** 
+     * Shuffles the order of questions in the array of objects using the built in
+     * JS array sort() method which swaps one item with the next one and 
+     * takes a callback function which returns a random + or - number. 
+     */
+    function shuffle(questions) {
+        return questions.sort(() => 0.5 - Math.random());
+    }
+
+    shuffle(questions);
+
+    /**
+     * Gets the questions and answers from the array and displays them on 
+     * the page using innerHTML
+     */
+    function displayQuiz() {
+        // variable for questions and answer choices
+        const output = [];
+
+        // iterates through the array of questions 
+        for (let i = 0; i < questions.length; i++) {
+            
+            // variable for list of possible answers
+            const answers = [];
+
+            // gets the questionID of each question
+            const questionID = questions[i].questionID;
+
+            // iterates through the answer options for each question
+            for (let letter in questions[i].answers) {
+
+                // adds and HTML radio button and label with attributes for each answer option
+                answers.push(
+                    `
+                    <label id="label${[questionID]}_${letter}" class="radio-label">
+                        <input type="radio" name="question${questionID}" value="${letter}" 
+                            onclick="selectOption(${[questionID]}, this.value);">
+                        ${questions[i].answers[letter]}
+                    </label>
+                    `
+                );
+            }
+
+            // creates HTML divs to contain the questions and answers and adds the answers to the output 
+            output.push(
+                `
+                <div class="exhibit">
+                    <div id="question${[questionID]}" class="question"> ${questions[i].question} </div>
+                    <div id="answers${[i]}" class="answers"> ${answers.join('')} </div>
+                </div>
+                `
+            );
+        }
+
+        // combine output list into one string of HTML and put it on the page
+        quizContainer.innerHTML = output.join('');    
+    }
+    
+    displayQuiz();
+}

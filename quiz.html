@@ -48,12 +48,29 @@
                     onclick="getResults();">Results</button>
             </div>
         </div>
+        <!-- Results Area -->
+        <div id="result-area" class="result-area" style="display:none;">
+            <div class="icon" id="icon"></div>
+            <p id="comment"></p><br>
+            <p>You scored</p>
+            <span id="result"></span>
+            <button id="play-again" aria-label="Play Again" type="button" class="btn btn-start"
+                onclick="location.reload();">Play Again</button>
+        </div>
+    </main>
     </main>
     <footer>
         <p> Footer Text Goes Here</p>
     </footer>
     <!-- Link to External JavaScript -->
     <script src="assets/js/script.js"></script>
+    <!-- Internal JavaScript code -->
+    <script>
+        // Calls function to build quiz
+        generateQuiz();
+        // Calls function to display only one quiz question and its answer options
+        showExhibit(currentExhibit);
+    </script>
 </body>
 
 </html>

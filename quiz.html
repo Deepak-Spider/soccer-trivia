@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Online Interactive Quiz on Soccer">
+    <meta name="keywords" content="online soccer quiz, soccer trivia, soccer fun quiz">
+    <!-- Link to Logo icon -->
+    <link rel="icon" href="assets/images/soccer-logo.png">
+    <!-- Link to stylesheets -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Soccer Trivia | Let's Football</title>
+</head>
+
+<body>
+    <header>
+        <h1>Game On!</h1>
+    </header>
+    <main>
+        <!-- Quiz Area -->
+        <div id="game-area" class="game-area">
+            <!-- Question Count and Progress Bar -->
+            <div class="progress">
+                <div class="progress-txt">
+                    <p id="exhibit-num">1</p>
+                    <p>&nbsp;/&nbsp;</p>
+                    <p>10</p>
+                </div>
+                <div class="progress-outline">
+                    <div id="progress-bar" class="progress-bar"></div>
+                </div>
+            </div>
+            <!-- Question and answer options -->
+            <div class="quiz-container">
+                <div id="quiz" tabindex="0"></div>
+            </div>
+            <!-- Error Message -->
+            <div class="quiz-feedback">
+                <p id="error-msg"></p>
+            </div>
+            <!-- Previous, Next and Results Buttons -->
+            <div class="controls">
+                <button id="previous" aria-label="Previous Button" type="button"
+                    class="btn btn-nav btn-nav--pre">Previous</button>
+                <button id="next" aria-label="Next Button" type="button" class="btn btn-nav btn-nav--next">Next</button>
+                <button id="submit" aria-label="Results Button" type="button" class="btn btn-submit"
+                    onclick="getResults();">Results</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        
+    </footer>
+    <!-- Link to External JavaScript -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

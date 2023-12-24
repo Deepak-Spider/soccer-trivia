@@ -140,11 +140,6 @@ input[type="text"]:focus {
 }
 
 /* Styling for Start(Let's Football) and Results Buttons */
-input[type="button"] {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-}
-
 .btn-start, 
 .btn-submit {
     color: #fff;

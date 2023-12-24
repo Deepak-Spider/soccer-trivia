@@ -72,6 +72,18 @@ h1 a:focus {
     color: #ece7e6;
 }
 
+/* Footer Styling */
+footer {
+    width: 100%;
+    height: 80px;
+    padding: .5em .5em 0;
+    margin-top: auto;
+    font-size: 1.4rem;
+    text-align: center;
+    color: #2D232E;
+    background-color: #e1830e;
+}
+
 /* Home Page Styles */
 
 .home {
@@ -160,4 +172,95 @@ input[type="text"]:focus {
     font-weight: 700;
     background-color: #7e62d1;
     box-shadow: 0 4px 15px rgba(45, 35, 46, .8);
+}
+
+/* Quiz Page Styles */
+main {
+    padding: 1em 0;
+    margin: auto 0;
+}
+
+/* The main container for the quiz */
+.game-area {
+    max-width: 800px;
+    width: 85%;
+    min-height: 490px;
+    background-color: #345995;
+    border-radius: 4px;
+    padding: 1em;
+    margin: auto;
+    box-shadow: 2px 10px 15px rgba(45, 35, 46, .5);
+}
+
+/* Question count and progress bar area styling */
+.progress {
+    width: 50%;
+    height: 50px;
+    margin: 1em auto 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Question Count */
+.progress-txt {
+    font-family: 'Nova Square', cursive;
+    color: #B8EBD0;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: .5em;
+}
+
+
+/* Progress Bar */
+.progress-outline {
+    width: 100%;
+    border: 2px solid rgba(76, 240, 150, .9);
+    border-radius: 50px;
+    box-sizing: border-box;
+}
+
+.progress-bar {
+    width: 10%;
+    height: 20px;
+    background-color: rgba(76, 240, 150, .7);
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+/* Quiz questions and answer options container */
+.quiz-container {
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+    margin: 1em auto 0;
+    padding: 1em;
+    color: #B8EBD0;
+    text-align: center;
+}
+
+#quiz {
+    height: fit-content;
+    outline: none;
+}
+
+/* Pagination for quiz questions and answer options */
+.exhibit {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s;
+    display: none;
+}
+
+.active-exhibit {
+    opacity: 1;
+    z-index: 2;
+    display: block;
 }

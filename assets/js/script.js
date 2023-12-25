@@ -101,7 +101,7 @@ const questions = [
     },
     {
         questionID: 2,
-        question: 'Who is known as the "Hand of God" for his infamous goal in the 1986 World Cup?',
+        question: 'Who is the "Hand of God" in the 1986 World Cup?',
         answers: {
             a: 'Diego Maradona', 
             b: 'Zinedine Zidane',
@@ -112,7 +112,7 @@ const questions = [
     },
     {
         questionID: 3,
-        question: 'What is the name of the designated area where a penalty kick is taken?',
+        question: 'What is the area for penalty kicks called?',
         answers: {
             a: 'Penalty box', 
             b: 'Penalty area',
@@ -123,7 +123,7 @@ const questions = [
     },
     {
         questionID: 4,
-        question: ' What is the name of the award given to the player who scores the most goals in a season?',
+        question: 'What is the award for the top scorer in a season called?',
         answers: {
             a: 'Golden Boot',
             b: 'Golden Ball',
@@ -146,7 +146,7 @@ const questions = [
     },
     {
         questionID: 6,
-        question: ' Which club has won the most UEFA Champions League titles until December 2023?',
+        question: 'Which club holds the most UEFA Champions League titles as of December 2023?',
         answers: {
             a: 'Real Madrid',
             b: 'FC Barcelona',

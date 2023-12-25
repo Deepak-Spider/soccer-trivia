@@ -412,3 +412,36 @@ input[type="radio"]:checked {
 .result-area span {
     margin-bottom: 1.5em;
 }
+
+/*  Media Queries */
+/* Screens wider than 1024px */
+@media only screen and (min-width: 1024px) {
+
+    .game-area {
+        width: 100%;
+    }
+
+    .progress {
+        margin-bottom: 3em;
+    }
+
+    .quiz-container {
+        min-height: 320px
+    }
+
+    .question {
+        max-width: 600px;
+        margin-bottom: 1em;
+    }
+    
+    .answers {
+        width: 610px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: .4em;
+    }
+
+    .controls {
+        margin-top: 2em;
+    }
+}

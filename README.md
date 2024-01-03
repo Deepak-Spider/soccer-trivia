@@ -150,7 +150,7 @@ Creating a competitive edge by displaying top scores, encouraging players to ret
 Enabling players to share their scores via social media platforms.
 Transforming the quiz into a social experience, enticing new players to join the fun.
 
-These forthcoming enhancements aim to not only diversify the quiz content but also foster a competitive and interactive community around the Soccer Quiz Game. Stay tuned for an even more engaging and dynamic quiz experience!
+These forthcoming enhancements aim to not only diversify the quiz content but also foster a competitive and interactive community around the Soccer Quiz Game.
 
 [Back to Top](#table-of-contents)
 
@@ -204,16 +204,19 @@ Wireframe for this site was done with Balsamiq. Through the design phase some el
 
 <details>
 <summary>Home Wireframe</summary>
+
 ![Home](assets/images/home-wireframe.png)
 </details>
 
 <details>
 <summary>Quiz Page Wireframe</summary>
+
 ![Quiz Page](assets/images/quiz-wireframe.png)
 </details>
 
 <details>
 <summary>Score DispalyWireframe</summary>
+
 ![Score Display](assets/images/score-wireframe.png)
 </details>
 
@@ -266,7 +269,11 @@ The code from the stylesheet was passed through the [Official W3C CSS Validator]
 
 ## Lighthouse Testing
 
+**Home Page - Desktop**
+
 ![Lighthouse Desktop](assets/images/lighthouse-desktop.png)
+
+**Home Page - Mobile**
 
 ![Lighthouse Mobile](assets/images/lighthouse-mobile.png)
 
@@ -306,6 +313,8 @@ The live link can be found [here](https://deepak-spider.github.io/soccer-trivia/
 
 [Stack Overflow](https://stackoverflow.com/)
 
+[Site Point quiz tutorial](https://www.sitepoint.com/simple-javascript-quiz/)
+
 [CSS Tricks](https://css-tricks.com)
 
 [Google fonts used throughout the website](https://fonts.google.com/)
@@ -320,3 +329,5 @@ The live link can be found [here](https://deepak-spider.github.io/soccer-trivia/
 This quiz site, Soccer Trivia was designed and developed in conjunction with the Full Stack Software Developer Diploma course at the Code Institute. I would like to thank my mentor, my cohort facilitator, the members of our cohort, the Slack community and Code Institute for all their support.
 
 [Back to Top](#table-of-contents)
+
+----

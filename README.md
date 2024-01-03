@@ -14,6 +14,20 @@ ___
     * [Quiz Page](#quiz-page)
     * [Score Display](#score-display)
     * [Future Features](#future-features)
+3. [User Experience (UX)](#3-user-experience-ux)
+    * [Site Goals](#site-goals)
+    * [Target Audience](#target-audience)
+    * [User Stories](#user-stories)
+    * [Structure](#structure)
+    * [Design](#design)
+    * [Colour Scheme](#colour-scheme)
+    * [Typography](#typography)
+    * [Wireframes](#wireframes)
+4. [Techologies](#4-technologies)
+5. [Testing](#5-testing)
+6. [Deployment](#6-deployment)
+7. [Citation](#7-citation)
+8. [Acknowledgement](#8-acknowledgement)
 
 
 # 1. Overview
@@ -29,7 +43,9 @@ It prioritises interactivity, engaging users through seamless keyboard navigatio
 
 * Header
 
-The Header, which displays the name of the quiz.
+The Header displays the name of the quiz game.
+
+![Header](assets/images/header.png)
 
 * The Logo
 
@@ -42,13 +58,19 @@ The logo is simple, yet memorable and distinctive. It captures the essence of th
 
 A user-friendly text input field encourages players to personalise their experience by entering a unique username before diving into the game. To ensure a seamless start, an error message appears beneath the input field if the user attempts to commence the quiz without providing a valid username.
 
+![Error message 1 for invalid username](assets/images/username.png)
+
 Once a valid username is entered, participants can swiftly initiate the quiz by either pressing the 'Enter' key on their keyboard or navigating to the designated button below. This simple and interactive approach enhances user engagement, making the commencement of the soccer quiz both effortless and enjoyable.
+
+![Error message 2 for invalid username](assets/images/error_msg_2.png)
 
 * A Start Button
 
 One key component of the Home Page is the Start Button. It is large and offers better contrast possible with the light-colored background. When it is focused on or hovered over, it changes color slightly and scales up.
 
 ## Quiz page
+
+![Quiz Page](assets/images/quizpage.png)
 
 The Main area consists of the following features:
 
@@ -61,6 +83,8 @@ The Question Count provides a quick reference, indicating the current question o
 Complementing the Question Count is the Progress Bar, a visual representation of the quiz progression. The capsule-shaped bar fills up as users click the 'Next' button, visually indicating progress. Conversely, it empties when the 'Previous' button is selected, offering an intuitive representation of the quiz journey. This graphical element adds a touch of interactivity, allowing players to visually track their advancement through the quiz.
 
 * Question and Answer Options
+
+![Question & Answer block](assets/images/question_answer.png)
 
 Immersing players in the soccer quiz experience, each question unfolds one at a time, creating an engaging and focused atmosphere. Below each question, a block of answer options awaits the player's decision.
 
@@ -84,6 +108,8 @@ Ensuring a seamless experience, the Soccer Quiz Game introduces a valuable Error
 
 If a player attempts to proceed to the Results section without selecting an answer option for every question, a personalised error message grabs their attention. Leveraging their entered username, the message prompts them to review and complete any unanswered questions. This personalised touch not only attracts the player's attention but also offers a more engaging and tailored experience.
 
+![Error message 3](assets/images/error_msg_3.png)
+
 Players can then navigate back effortlessly, reassess their answers, and ensure a comprehensive quiz submission. This thoughtful feature reinforces user-friendly design principles, providing players with clear guidance and an opportunity for a more thorough soccer quiz experience.
 
 ## Score Display
@@ -93,6 +119,8 @@ The culmination of the Soccer Quiz Game experience is marked by the captivating 
 Featuring an Icon representing the score outcome, this visual element provides instant feedback on the player's achievement. The accompanying Remark adds a personalized touch, dynamically changing to reward, incentivize, or playfully challenge the player based on their total score. This not only acknowledges their efforts but also motivates them for future quiz endeavors.
 
 The inclusion of the Play Again Button beckons players to embark on another round of soccer trivia. Clicking this button seamlessly refreshes the quiz, taking the player back to the starting point without the need to re-insert their username. This ensures a smooth and enticing loop for players to revisit the quiz and aim for an even better score.
+
+![Score Dispaly](assets/images/score%20display.png)
 
 The Score Display encapsulates the essence of the soccer quiz journey, offering a visually appealing and rewarding conclusion to the player's adventure.
 
@@ -155,9 +183,14 @@ The Score Display at the end of the quiz maintains clarity, offering visual icon
 
 ## Design
 
-### Colour Scheme
-### Typography
-### Wireframes
+## Colour Scheme
+![Colour Palettes](assets/images/color-palette.png)
+## Typography
+## Wireframes
+
+![Home](assets/images/home-wireframe.png)
+![Quiz Page](assets/images/quiz-wireframe.png)
+![Score Display](assets/images/score-wireframe.png)
 
 [Back to Top](#table-of-contents)
 
@@ -181,7 +214,7 @@ HTML, CSS and JavaScript were used to create this interactive online game.
 
 [Back to Top](#table-of-contents)
 
-# Testing
+# 5. Testing
 
 ## Validator Testing
 
@@ -189,22 +222,28 @@ HTML, CSS and JavaScript were used to create this interactive online game.
 
 The code from the following HTML files was passed through the [Official W3C Markup Validator](https://validator.w3.org/)
 * index.html
-
+![index](assets/images/validation-home.png)
 Document checking completed. No errors or warnings to show.
 
 * quiz.html
-
+![quiz](assets/images/validation-quiz.png)
 Document checking completed. No errors or warnings to show.
 
 #### CSS
 
 The code from the stylesheet was passed through the [Official W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
 
-Congratulations! No Error Found.
+![css](assets/images/css%20validator.png)
 
 #### JavaScript
 
-* No errors were found when passing through the [Official Jshint Validator](https://jshint.com/)
+* No errors were found when passing through the [Official JSHint Validator](https://jshint.com/)
+
+## Lighthouse Testing
+
+![Lighthouse Desktop](assets/images/lighthouse-desktop.png)
+
+! [Lighthouse Mobile](assets/images/lighthouse-mobile.png)
 
 ## Manual Testing
 
@@ -215,7 +254,7 @@ Quizzified was tested manually and is compatible with the following browsers:
 * Edge
 * Firefox
 
-# 7. Deployment
+# 6. Deployment
 
 This online quiz was deployed to [GitHub Pages](https://pages.github.com/).  The steps taken in deploying this project are as follows:
 
@@ -232,7 +271,7 @@ The live link can be found [here](https://deepak-spider.github.io/soccer-trivia/
 
 [Back to Top](#table-of-contents)
 
-# 8. Citation of Sources
+# 7. Citation
 
 [W3Schools](https://www.w3schools.com/js/)
 
@@ -248,4 +287,8 @@ The live link can be found [here](https://deepak-spider.github.io/soccer-trivia/
 
 
 [Back to Top](#table-of-contents)
+
+# 8. Acknowledgement
+
+This quiz site, Soccer Trivia was designed and developed in conjunction with the Full Stack Software Developer Diploma course at the Code Institute. I would like to thank my mentor, my cohort facilitator, the members of our cohort, the Slack community and Code Institute for all their support.
 

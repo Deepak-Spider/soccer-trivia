@@ -23,7 +23,7 @@ ___
     * [Colour Scheme](#colour-scheme)
     * [Typography](#typography)
     * [Wireframes](#wireframes)
-4. [Techologies](#4-technologies)
+4. [Technologies](#4-technologies)
 5. [Testing](#5-testing)
 6. [Deployment](#6-deployment)
 7. [Citation](#7-citation)
@@ -36,6 +36,8 @@ The aim of this project is to  showcase proficiency in HTML, CSS, and JavaScript
 
 The quiz comprises ten questions, each offering four answer options, with only one correct.
 It prioritises interactivity, engaging users through seamless keyboard navigation and accessibility features compatible with screen readers.
+
+[Back to Top](#table-of-contents)
 
 # 2. Features
 
@@ -50,7 +52,7 @@ The Header displays the name of the quiz game.
 * The Logo
 
 The Logo is displayed on the main area of the Home Page as an image. The Soccer Trivia logo is a creative and eye-catching design that conveys the theme of the game. The logo features a stylized soccer ball encased within a dynamic, flame-like orange shape, suggesting motion or intensity.
-The soccer ball represents the main topic, which is soccer trivia. It also implies that your project is fun, engaging, and interactive, as soccer is a popular and exciting sport.
+The soccer ball represents the main topic, which is soccer trivia. It also implies that the project is fun, engaging, and interactive, as soccer is a popular and exciting sport.
 The flame-like shape around the soccer ball symbolises the challenge and difficulty of the trivia questions, as well as the passion and enthusiasm of the players. It also creates a contrast with the white background, making the logo stand out and attract attention.
 The logo is simple, yet memorable and distinctive. It captures the essence of the game and communicates it effectively to the target audience.
 
@@ -150,6 +152,8 @@ Transforming the quiz into a social experience, enticing new players to join the
 
 These forthcoming enhancements aim to not only diversify the quiz content but also foster a competitive and interactive community around the Soccer Quiz Game. Stay tuned for an even more engaging and dynamic quiz experience!
 
+[Back to Top](#table-of-contents)
+
 # 3. User Experience (UX)
 
 ## Site Goals
@@ -174,7 +178,7 @@ The target audience for the Soccer Trivia is a diverse group of soccer and quiz 
 
 The Soccer Quiz Game embraces a minimalist design to provide users with a seamless and focused gaming experience. The simplicity and consistency in its structure ensure that users can fully concentrate on the thrill of the quiz.
 
-There are three pages in the layout; a home page, a quiz page, and a score display page.
+This layout has three UI elements: a homepage, a quiz page, and a score display.
 Quiz questions take center stage with a clear and large font, and answer options are neatly displayed below. To enhance user interaction, answer options change color upon selection, providing a dynamic visual experience. On larger screens, the layout adjusts intelligently, presenting answer options in two columns for easy navigation without constant scrolling.
 
 To aid concentration, pagination for questions and answers is implemented, allowing players to focus on one question at a time. The inclusion of a "Previous" button empowers users to review and adjust their answers before submitting for results.
@@ -184,13 +188,34 @@ The Score Display at the end of the quiz maintains clarity, offering visual icon
 ## Design
 
 ## Colour Scheme
+
+The colour scheme was thoughtfully chosen to reflect the excitement of the game. The colour palette for the website was generated from [coolors](https://coolors.co/).
+
 ![Colour Palettes](assets/images/color-palette.png)
+
 ## Typography
+
+Poppins is known for its excellent readability, making it a suitable choice for presenting quiz questions, answer options, and any textual content within the project. Its clean and balanced letterforms ensure clarity, enhancing the user's ability to engage with the content effortlessly.
+The choice of the "Poppins" font for this site is driven by its readability, modern aesthetics, versatility, accessibility, and consistent performance across devices. These factors collectively contribute to an enhanced user experience, making Poppins an ideal choice for the typography within the Soccer Quiz Game.
+
 ## Wireframes
 
+Wireframe for this site was done with Balsamiq. Through the design phase some elements were changed to allow for a better user experience.
+
+<details>
+<summary>Home Wireframe</summary>
 ![Home](assets/images/home-wireframe.png)
+</details>
+
+<details>
+<summary>Quiz Page Wireframe</summary>
 ![Quiz Page](assets/images/quiz-wireframe.png)
+</details>
+
+<details>
+<summary>Score DispalyWireframe</summary>
 ![Score Display](assets/images/score-wireframe.png)
+</details>
 
 [Back to Top](#table-of-contents)
 
@@ -243,7 +268,7 @@ The code from the stylesheet was passed through the [Official W3C CSS Validator]
 
 ![Lighthouse Desktop](assets/images/lighthouse-desktop.png)
 
-! [Lighthouse Mobile](assets/images/lighthouse-mobile.png)
+![Lighthouse Mobile](assets/images/lighthouse-mobile.png)
 
 ## Manual Testing
 
@@ -253,6 +278,8 @@ Quizzified was tested manually and is compatible with the following browsers:
 * Google Chrome
 * Edge
 * Firefox
+
+[Back to Top](#table-of-contents)
 
 # 6. Deployment
 
@@ -285,10 +312,11 @@ The live link can be found [here](https://deepak-spider.github.io/soccer-trivia/
 
 [Font Awesome Icons](https://fontawesome.com/icons)
 
-
+----
 [Back to Top](#table-of-contents)
 
 # 8. Acknowledgement
 
 This quiz site, Soccer Trivia was designed and developed in conjunction with the Full Stack Software Developer Diploma course at the Code Institute. I would like to thank my mentor, my cohort facilitator, the members of our cohort, the Slack community and Code Institute for all their support.
 
+[Back to Top](#table-of-contents)
